@@ -32,3 +32,43 @@
   text-align: left;
 }
 
+/* Card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  padding: 16px;
+  border: 2px solid #1f3a5f;
+  border-radius: 10px;
+}
+
+/*  Form */
+form input {
+  padding: 8px;
+  border: 1px solid gray;
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+.btn-primary {
+  padding: 10px 16px;
+  background-color: #1f3a5f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 700px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
