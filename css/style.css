@@ -1,7 +1,73 @@
-/* ITCS333 A2 starter — implement the design spec from index.html here.
-   See README rubric for the graded checks. Do not use inline styles. */
+/*Header */
+#site-header {
+  padding: 20px;
+  background-color: #1f3a5f;
+  color: white;
+  border-bottom: 4px solid gold;
+  text-align: center;
+}
 
-/* TODO: style #site-header (padding, border-bottom) */
-/* TODO: style .card (padding, border, gap) and .card-grid (display, gap, 3 columns) */
-/* TODO: style form inputs (padding) and a :focus state */
-/* TODO: add a @media (max-width: 700px) query collapsing .card-grid to one column */
+/* descendant selector */
+.main-nav a {
+  color: white;
+  margin-right: 15px;
+}
+
+/* pseudo-class */
+.main-nav a:hover {
+  color: gold;
+}
+
+/* Table */
+.schedule-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid gray;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  padding: 16px;
+  border: 2px solid #1f3a5f;
+  border-radius: 10px;
+}
+
+/*  Form */
+form input {
+  padding: 8px;
+  border: 1px solid gray;
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+.btn-primary {
+  padding: 10px 16px;
+  background-color: #1f3a5f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 700px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
